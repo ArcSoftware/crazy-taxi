@@ -1,7 +1,7 @@
 td {
   border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 tr {
@@ -9,5 +9,7 @@ tr {
 }
 
 .highlight {
-  background-color: green;
+  // background-color: green;
+  background-image: url('../taxi-front-yellow-icon.png');
+  background-repeat: no-repeat;
 }
