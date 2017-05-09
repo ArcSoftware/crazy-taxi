@@ -2,7 +2,6 @@ window.addEventListener('load', function () {
   let TaxiModel = require('./taximodel');
   let TaxiView = require('./taxiview');
 
-  let start = document.querySelector('#zero');
   let rowIndex = 10;
   let columnIndex = 10;
   document.querySelector('#grid').rows[rowIndex].cells[columnIndex].classList.add('highlight');
@@ -20,7 +19,6 @@ window.addEventListener('load', function () {
   });
 
   taxiView.render();
-
 
   let upBtn = document.querySelector('#up');
   upBtn.addEventListener('click', function () {
@@ -65,10 +63,6 @@ window.addEventListener('load', function () {
       taxiModel.X += 1;
     }
   });
-
-
-
-
 
 
 
