@@ -13,7 +13,12 @@ window.addEventListener('load', function () {
   let TaxiModel = require('./taximodel');
   let TaxiView = require('./taxiview');
 
-  document.querySelector('#zero').classList.add('highlight');
+  let start = document.querySelector('#zero');
+  let rowIndex = 10;
+  let cellIndex = 10;
+  document.querySelector('#grid').rows[rowIndex].cells[cellIndex].classList.add('highlight');
+  // source: 
+  // https://stackoverflow.com/questions/10940714/how-do-you-select-a-table-cell-by-its-index
 
   let taxiModel = new TaxiModel();
   taxiModel.fuel = 25;
@@ -30,8 +35,10 @@ window.addEventListener('load', function () {
 
   let upBtn = document.querySelector('#up');
   upBtn.addEventListener('click', function () {
-    if (taxiModel.fuel > 0) {
-      document.querySelector('#zero').classList.remove('highlight');
+    if (taxiModel.fuel > 0 && taxiModel.Y < 10) {
+      rowIndex--;
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex].classList.add('highlight');
+      document.querySelector('#grid').rows[rowIndex + 1].cells[cellIndex].classList.remove('highlight');
       taxiModel.fuel -= 1;
       taxiModel.Y += 1;
     }
@@ -39,8 +46,10 @@ window.addEventListener('load', function () {
 
   let downBtn = document.querySelector('#down');
   downBtn.addEventListener('click', function () {
-    if (taxiModel.fuel > 0) {
-      document.querySelector('#zero').classList.remove('highlight');
+    if (taxiModel.fuel > 0 && taxiModel.Y > -10) {
+      rowIndex++;
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex].classList.add('highlight');
+      document.querySelector('#grid').rows[rowIndex - 1].cells[cellIndex].classList.remove('highlight');
       taxiModel.fuel -= 1;
       taxiModel.Y -= 1;
     }
@@ -48,8 +57,10 @@ window.addEventListener('load', function () {
 
   let leftBtn = document.querySelector('#left');
   leftBtn.addEventListener('click', function () {
-    if (taxiModel.fuel > 0) {
-      document.querySelector('#zero').classList.remove('highlight');
+    if (taxiModel.fuel > 0 && taxiModel.X > -10) {
+      cellIndex--;
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex].classList.add('highlight');
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex + 1].classList.remove('highlight');
       taxiModel.fuel -= 1;
       taxiModel.X -= 1;
     }
@@ -57,8 +68,10 @@ window.addEventListener('load', function () {
 
   let rightBtn = document.querySelector('#right');
   rightBtn.addEventListener('click', function () {
-    if (taxiModel.fuel > 0) {
-      document.querySelector('#zero').classList.remove('highlight');
+    if (taxiModel.fuel > 0 && taxiModel.X < 10) {
+      cellIndex++;
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex].classList.add('highlight');
+      document.querySelector('#grid').rows[rowIndex].cells[cellIndex - 1].classList.remove('highlight');
       taxiModel.fuel -= 1;
       taxiModel.X += 1;
     }

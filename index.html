@@ -19,77 +19,8 @@
   <button id='left'>LEFT</button>
   <button id='right'>RIGHT</button>
   <div id='taxi-view'></div>
-  <table>
-    <tr class='r1'>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class='r2'>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class='r3'>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class='r4'>
+  <table id='grid'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -135,7 +66,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r5'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -158,7 +89,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r6'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -181,7 +112,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r7'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -204,7 +135,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r8'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -227,7 +158,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r9'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -250,30 +181,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r10'>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td id='zero'></td><!--middle of middle-->
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class='r11'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -296,7 +204,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r12'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -319,7 +227,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r13'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -342,7 +250,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r14'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -365,7 +273,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r15'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -388,7 +296,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r16'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -411,7 +319,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r17'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -434,7 +342,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r18'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -457,7 +365,7 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r19'>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
@@ -480,7 +388,99 @@
       <td></td>
       <td></td>
     </tr>
-    <tr class='r20'>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td></td>
