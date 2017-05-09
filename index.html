@@ -2,13 +2,26 @@
 
 <head>
   <script src='app.js'></script>
+  <script type='x-ampersand-template' id='taxi-template'>
+      <div>
+      <p>Fuel: <span id='fuel'></span></p>
+      <p>X: <span id='X'></span></p>
+      <p>Y: <span id='Y'></span></p>
+      </div>
+    </script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <button id='test'>test highlight</button>
+  <button id='test'>test</button>
+  <button id='up'>UP</button>
+  <button id='down'>DOWN</button>
+  <button id='left'>LEFT</button>
+  <button id='right'>RIGHT</button>
+  <div id='taxi-view'></div>
   <table>
     <tr class='r1'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -51,8 +64,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r3'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -95,8 +110,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -139,8 +156,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r6'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -183,8 +202,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r8'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -227,6 +248,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r10'>
       <td></td>
@@ -239,6 +261,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td class='highlight' id='zero'></td><!--middle of middle-->
       <td></td>
       <td></td>
       <td></td>
@@ -251,6 +274,7 @@
       <td></td>
     </tr>
     <tr class='r11'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -293,8 +317,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r13'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -337,8 +363,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r15'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -381,8 +409,10 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r17'>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -425,6 +455,7 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr class='r19'>
       <td></td>
@@ -447,7 +478,31 @@
       <td></td>
       <td></td>
       <td></td>
-    </tr class='r20'>
+      <td></td>
+    </tr>
+    <tr class='r20'>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </table>
 </body>
 
